@@ -1,169 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-blue.css">   
-<title>Links website</title>
-<script src="https://unpkg.com/feather-icons"></script>
-
-<style>
-
-body {
-  background-image: url("https://www.w3schools.com/howto/img_link_tree_template3_bg.jpg"); /* The image used for background */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.name {
-  margin-top: 15px !important;
-}
-
-.w3-theme-d3 {
-  background-color: rgba(42, 169, 219, 0.6) !important;
-}
-
-.w3-theme-d3:hover {
-  background-color: rgba(42, 169, 219, 0.8) !important;
-}
-
-a {
-  font-size: x-large;
-}
-
-.w3-border {
-  border: 3px solid #ccc !important;
-}
-
-.links-container {
-  display: flex;
-  flex-direction: column;
-  jusify-content: center;
-  align-items: center;
-}
-
-.links-container a {
-  width: 80%;
-}
-
-.profession {
-  font-size: 14px;
-}
-
-.subscribe {
-  font-size: 15px;
-}
-
-.submit form {
-  display: flex;
-  flex-direction: column;
-}
-
-.submit form button {
-  margin-top: 5px;
-  background-color: rgba(27, 122, 159, 0.9) !important;
-  color: #fff !important;
-}
-
-.submit form button:hover {
-  background-color: rgba(15, 67, 87, 0.9) !important;
-  color: #fff !important;
-}
-.submit form input {
-  width: 100% !important;
-}
-.submit form input::placeholder {
-  color: #fff;
-}
-
-.icons {
-  display: flex;
-  gap: 40px;
-}
-
-.icons a {
-  text-decoration: none;
-}
-
-.icons a svg {
-  fill: #d0ecf7;
-  transform: scale(1.5);
-}
-
-@media screen and (min-width: 768px) {
-  .link {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-
-  .profession {
-    font-size: 24px;
-  }
-}
-</style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Brad Traversy | Web Developer</title>
   </head>
-
   <body>
-    <!-- Content container -->
-    <div class="container">
+    <header class="header vh-100 text-center position-relative">
+      <div
+        class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
+      >
+        <h5 class="text-primary fs-3 fw-bold text-uppercase">Hello, World.</h5>
+        <h1 id="typing-text" class="display-1 fw-bold text-white"></h1>
 
-      <!-- Image and name container. Change to your picture here. -->
-      <div class="" style="text-align: center">
-        <img src="https://www.w3schools.com/howto/img_link_tree_template3_bio.jpg" class="w3-round" alt="person image" width="250px" height="200px" style="border-radius: 50%; border: 5px solid #4ab6e0 !important; margin-top: 16px;">
-        <p class="name"><br><span class="w3-padding w3-theme-l1 w3-margin w3-round" style="font-weight: bolder; font-size: x-large; border: 3px solid #1b7a9f;">Hey. I'm Joe!</span></p><br>
-        <p><span class="profession w3-padding w3-theme-d5 w3-round" style="font-weight: bolder; border: 3px solid #d0ecf7;">I am a mountain climber!</span></p><br>
-      </div>
+        <p class="roles text-white text-uppercase fs-4">
+          <span>Full Stack Web Developer | </span>
+          <span>Online Educator</span>
+        </p>
 
-      <!-- Links section 1. Replace the # inside of the "" with your links. -->
-      <div class="links-container">
-        <a href="#" class="w3-button w3-round w3-theme-d3 w3-border link" target="_blank">MY CLIMBS</a>
-        <br>
-        <a href="#" class="w3-button w3-round w3-theme-d3 w3-border link" target="_blank">EXPEDITIONS</a>
-        <br>
-        <a href="#" class="w3-button w3-round w3-theme-d3 w3-border link" target="_blank">MY WORKOUT</a>
-        <br>
-        <a href="#" class="w3-button w3-round w3-theme-d3 w3-border link" target="_blank">MY BLOG</a><br>
-        <br>
-        <p><span class="subscribe w3-padding w3-theme-d5 w3-round" style="font-weight: bolder; border: 3px solid #d0ecf7;">Subscribe to my news!</span></p>
-        <div class="submit" style="width: 80%;">
-          <form>
-            <input class="w3-input w3-round w3-theme-d3 w3-border" type="text" placeholder="Your email . . . " name="email">
-            <button class="w3-button w3-round w3-border" type="submit">SUBSCRIBE</button>
-          </form>
-        </div><br>
-        <div class="icons w3-padding">
-          <a href="#" target="_blank">
-            <i data-feather="facebook"></i>
+        <a href="#about" class="btn btn-outline-light btn-lg mt-3">
+          <div class="d-flex">
+            <div class="me-3">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="text-start">
+              <span>More About Me</span>
+            </div>
+          </div>
+        </a>
+
+        <div class="social d-flex gap-3 position-absolute">
+          <a href="#">
+            <i class="fab fa-twitter fa-3x text-white"></i>
           </a>
-          <a href="#" target="_blank">
-            <i data-feather="instagram"></i>
+          <a href="#">
+            <i class="fab fa-instagram fa-3x text-white"></i>
           </a>
-          <a href="#" target="_blank">
-            <i data-feather="linkedin"></i>
+          <a href="#">
+            <i class="fab fa-linkedin fa-3x text-white"></i>
           </a>
-          <a href="#" target="_blank">
-            <i data-feather="twitter"></i>
+          <a href="#">
+            <i class="fab fa-facebook fa-3x text-white"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-youtube fa-3x text-white"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github fa-3x text-white"></i>
           </a>
         </div>
       </div>
+    </header>
 
-    </div>
-    <script>
-      feather.replace()
-    </script>
-  </body>  </html>
+    <!-- About -->
+    <section id="about" class="about bg-light py-5">
+      <div class="container">
+        <div class="text-center">
+          <h4 class="text-uppercase fw-bold text-primary">About Me</h4>
+          <hr class="w-25 mx-auto" />
+          <h2 class="mb-4">Let me introduce myself.</h2>
+        </div>
+        <div class="about-content d-flex gap-5 align-items-center h-100">
+          <img
+            src="images/brad.jpg"
+            alt=""
+            class="about-img img-fluid rounded-circle"
+          />
+          <p class="lead">
+            I am a full stack web developer from Boston MA. I started writing
+            code about 16 years ago. I started with Java and then moved to web
+            technologies like HTML, CSS, JavaScript and PHP. I have worked for
+            companies as well as ran my own. In 2016 I started creating content
+            full-time. I love helping people learn to code and better their
+            lives.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile & Skills -->
+    <section class="profile my-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="text-uppercase fw-bold">Profile</h3>
+            <p>
+              Here is some more info about myself to help you get to know me
+              better.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-user text-primary"></i> Full Name:
+                </h5>
+                <p>Brad Traversy</p>
+              </li>
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-calendar text-primary"></i> Birth Date:
+                </h5>
+                <p>August 10, 1981</p>
+              </li>
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-building text-primary"></i> Current Position:
+                </h5>
+                <p>Owner at Traversy Media</p>
+              </li>
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-home text-primary"></i> Website:
+                </h5>
+                <p>traversymedia.com</p>
+              </li>
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-envelope text-primary"></i> Email:
+                </h5>
+                <p>brad@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-uppercase fw-bold">Skills</h3>
+            <p>
+              Here is a list of my skills with these dumb percentages that don't
+              mean anything 😉
+            </p>
+            <h5><i class="fas fa-check"></i> HTML 5</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 100%">100%</div>
+            </div>
+
+            <h5><i class="fas fa-check"></i> CSS</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 90%">90%</div>
+            </div>
+
+            <h5><i class="fas fa-check"></i> JavaScript</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 90%">90%</div>
+            </div>
+
+            <h5><i class="fas fa-check"></i> Bootstrap</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 100%">100%</div>
+            </div>
+
+            <h5><i class="fas fa-check"></i> PHP</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 75%">75%</div>
+            </div>
+
+            <h5><i class="fas fa-check"></i> Python</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 70%">70%</div>
+            </div>
+
+            <h5><i class="fas fa-check"></i> UI/UX</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 70%">70%</div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 text-center">
+          <div class="col-12">
+            <a
+              href="#"
+              class="btn btn-outline-dark btn-lg text-uppercase px-5 mx-3 my-2"
+              >Hire Me Now</a
+            >
+            <a
+              href="#"
+              class="btn btn-dark btn-lg text-uppercase px-5 mx-3 my-2"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h4 class="text-uppercase fw-bold text-primary">Portfolio</h4>
+          <hr class="w-25 mx-auto" />
+          <h2 class="mb-4">Check Out My Work</h2>
+          <p class="lead">Here is a small sample of my projects.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a
+                href="images/project1.jpg"
+                data-lightbox="images"
+                data-title="Cliboard Landing Page"
+              >
+                <img
+                  src="images/project1.jpg"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a
+                href="images/project2.jpg"
+                data-lightbox="images"
+                data-title="Loop Studios Website"
+              >
+                <img
+                  src="images/project2.jpg"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a
+                href="images/project3.jpg"
+                data-lightbox="images"
+                data-title="Shortly Website"
+              >
+                <img
+                  src="images/project3.jpg"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a
+                href="images/project4.jpg"
+                data-lightbox="images"
+                data-title="Flyo Website"
+              >
+                <img
+                  src="images/project4.jpg"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a
+                href="images/project5.jpg"
+                data-lightbox="images"
+                data-title="Bookmark Website"
+              >
+                <img
+                  src="images/project5.jpg"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a
+                href="images/project6.jpg"
+                data-lightbox="images"
+                data-title="Grid Layout"
+              >
+                <img
+                  src="images/project6.jpg"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Styleshout -->
+    <section class="styleshout text-bg-dark bg-gradient p-6 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Shoutout to StyleShout</h1>
+            <hr class="w-25 mx-auto" />
+            <p class="lead mb-5">
+              Styleshout is a place for Free HTML5 Templates and Free Wordpress.
+              This design was inspired by one of their templates. Check them out
+              for templates to use and get inspiration from.
+            </p>
+            <a
+              href="https://styleshout.com"
+              target="_blank"
+              class="btn btn-primary btn-lg text-uppercase px-5 mx-3 my-2"
+            >
+              Visit StyleShout
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services text-bg-dark py-5 position-relative">
+      <div class="container position-relative">
+        <div class="text-center mb-5">
+          <h4 class="text-uppercase fw-bold text-primary">Services</h4>
+          <hr class="w-25 mx-auto" />
+          <h2 class="mb-4">What Can I Do For You?</h2>
+          <p class="lead">
+            Here are some of the services that I offer when it comes to web
+            development and business.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <i class="fas fa-globe fa-3x text-primary mb-3"></i>
+            <h3 class="fs-3">Web Design</h3>
+            <hr class="w-25 mx-auto" />
+            <p class="fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quis
+              autem quam, illo quisquam eligendi illum delectus nam amet porro!
+            </p>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <i class="fas fa-code fa-3x text-primary mb-3"></i>
+            <h3 class="fs-3">Web Development</h3>
+            <hr class="w-25 mx-auto" />
+            <p class="fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quis
+              autem quam, illo quisquam eligendi illum delectus nam amet porro!
+            </p>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <i class="fas fa-shopping-cart fa-3x text-primary mb-3"></i>
+            <h3 class="fs-3">Advetising & SEO</h3>
+            <hr class="w-25 mx-auto" />
+            <p class="fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quis
+              autem quam, illo quisquam eligendi illum delectus nam amet porro!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats py-5 text-bg-secondary">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-md-4 col-lg-2">
+            <div class="stat text-center border-end border-dark">
+              <i class="fas fa-users fa-3x mb-3"></i>
+              <p class="fs-1">500+</p>
+              <h3 class="fs-6 text-uppercase">Clients</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="stat text-center border-end border-dark">
+              <i class="fas fa-project-diagram fa-3x mb-3"></i>
+              <p class="fs-1">700+</p>
+              <h3 class="fs-6 text-uppercase">Projects</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="stat text-center border-end border-dark">
+              <i class="fas fa-clock fa-3x mb-3"></i>
+              <p class="fs-1">16+</p>
+              <h3 class="fs-6 text-uppercase">Years</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="stat text-center border-end border-dark">
+              <i class="fas fa-book fa-3x mb-3"></i>
+              <p class="fs-1">25</p>
+              <h3 class="fs-6 text-uppercase">Publications</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="stat text-center border-end border-dark">
+              <i class="fas fa-youtube fa-3x mb-3"></i>
+              <p class="fs-1">2.06M</p>
+              <h3 class="fs-6 text-uppercase">Subscribers</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="stat text-center border-end border-dark">
+              <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+              <p class="fs-1">1M+</p>
+              <h3 class="fs-6 text-uppercase">Students</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact text-bg-dark bg-gradient py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="text-center mb-5">
+              <h4 class="text-uppercase fw-bold text-primary">Contact</h4>
+              <hr class="w-25 mx-auto" />
+              <h2 class="mb-4">I'd love to hear from you.</h2>
+              <p class="lead">
+                If you have any questions or would like to work together, please
+                contact me with the form below.
+              </p>
+            </div>
+
+            <!-- Form -->
+            <form name="contact" netlify>
+              <div class="mb-5">
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  name="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="mb-5">
+                <input
+                  type="email"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-5">
+                <textarea
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="mb-5 d-grid">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Footer -->
+        <div class="d-flex mt-5">
+          <p class="flex-grow-1">
+            Copyright &copy; 2023 | Design By StyleShout
+          </p>
+          <div class="hstack gap-3">
+            <a href="#">
+              <i class="fab fa-facebook fa-2x text-white"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="fab fa-twitter fa-2x text-white"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="fab fa-instagram fa-2x text-white"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="fab fa-linkedin fa-2x text-white"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="fab fa-dribbble fa-2x text-white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
